@@ -74,8 +74,8 @@ export class AppComponent {
       alert('please selected one box')
       return
     }
-    if(this.length==0){
-      alert('pick length')
+    if(this.length==0 || this.length > 10){
+      alert('length must be between 1 - 10')
       return
     }else{
       this.generatePassword()

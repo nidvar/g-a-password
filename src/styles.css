@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    height:100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-align: center;
+}
+.length{
+    width:350px;
+    padding:0;
+    margin:0;
+    height:30px;
+}
+button{
+    width:350px;
+    padding:0;
+    margin:0;
+    height:40px;
+    border:none;
+    border-radius:5px;
+    background-color: skyblue;
+    color:white;
+    font-size:25px;
+}
+.myContainer{
+    width:350px;
+    margin:auto;
+}
+div{
+    margin:10px 0 10px 0
+}
+.passwordbox{
+    margin:40px 0 0 0
+}
+.passwordbox input{
+    border:none;
+}
+
+input{
+    font-size:20px;
+}

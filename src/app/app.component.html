@@ -1,30 +1,32 @@
-<h1>Password Generator</h1>
+<div class='myContainer'>
+  <h1>Password Generator</h1>
 
-<div>
-  <label>Enter Length</label>
-  <input (input)="onChangeLength($event.target.value)"/>
-</div>
-
-<div>
-  <label>Use Numbers</label>
-  <input type ='checkbox' (change)="onUseNumberCheck()" />
-</div>
-
-<div>
-  <label>Use Letters</label>
-  <input type ='checkbox' (change)="onUseLettersCheck()" />
-</div>
-
-<div>
-  <label>Use Symbols</label>
-  <input type ='checkbox' (change)="onUseSymbolsCheck()" />
-</div>
-
-<div>
-  <button (click)="onButtonClick()">GENERATE</button>
-</div>
-
-<div>
-  <label>Your Password</label>
-  <input [value] = "getPassword()" />
+  <div>
+    <label>Enter Length </label><br />
+    <input (input)="onChangeLength($event.target.value)" class="length"/>
+  </div>
+  
+  <div>
+    <label>Use Numbers</label>
+    <input type ='checkbox' (change)="onUseNumberCheck()" />
+  </div>
+  
+  <div>
+    <label>Use Letters</label>
+    <input type ='checkbox' (change)="onUseLettersCheck()" />
+  </div>
+  
+  <div>
+    <label>Use Symbols</label>
+    <input type ='checkbox' (change)="onUseSymbolsCheck()" />
+  </div>
+  
+  <div>
+    <button (click)="onButtonClick()">Generate</button>
+  </div>
+  
+  <div class='passwordbox'>
+    <label>Your Password : </label>
+    <input [value] = "getPassword()" />
+  </div>
 </div>
